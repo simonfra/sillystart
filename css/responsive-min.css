@@ -1,0 +1,347 @@
+
+/* Mobile Layout: 480px and below. 
+.gridContainer {margin-left: auto; margin-right: auto; 	width: 87.36%;	padding-left: 1.82%;	padding-right: 1.82%;}*/
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+/*-------------------------------start 0 to 480----------*/
+/*   http://www.alistapart.com/articles/fluid-images/ */
+h1 {
+	color:#999;
+}
+p, ul, li {
+	font-family:'Open Sans', sans-serif;
+}
+button {
+	font-size:1.4em;
+	color:#388EAD;
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.page, .ui-header, .header {
+	background:transparent;
+/*  border-color: #E7E7E7;*/
+/*  background-color:#524f4f!important;*/
+  background-image: linear-gradient(to bottom, #888 0%, #666 50%);
+
+	height:2rem;
+	text-shadow:none;
+	z-index:1000;
+}
+.page h3, .ui-header h3, .header h3{
+	color:#dedede;
+}
+/*
+.page, .ui-header, .header .green {
+	background:transparent;
+  border-color: #E7E7E7;
+  background-color:#524f4f!important;
+  background-image: linear-gradient(to bottom, #41ad48 0%, #05660b 100%);
+  color:#eee; 
+}
+*/
+
+.green-back {
+  background-color:#d7e9d3!important;
+  background-image: linear-gradient(to bottom, #41ad48 0%, #05660b 100%);
+  color:#d7e9d3!important;
+  text-shadow:none!important;
+  text-outline:none;
+}
+
+.green-back a{
+  color:#d7e9d3!important;
+  text-shadow:none;
+}
+
+
+}
+@media (min-width: 1200px) and (max-width: 2000px) {
+	.gallery-min {
+		width:18%;
+	}
+	.gallery-mid {
+		width:48%;
+		border:1px solid #ccc;
+	}
+
+	.gallery-max {
+		width:78%;
+		margin: 10px auto;
+		border:3px solid #ccc;
+	}
+	div.floatLeft-box-max {
+	min-height:350px;
+}
+.floatLeftHalfLow {
+           float:left;  
+           padding: 0;
+            }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.gallery-min {
+		width:24%;
+	}
+	.gallery-mid {
+		width:98%;
+		border:1px solid #ccc;
+	}
+	.gallery-max {
+		width:78%;
+		margin: 10px auto;
+		border:3px solid #ccc;
+	}
+	div.floatLeft-box-max {
+	min-height:350px;
+}
+ .floatLeftHalfLow {
+         padding: 120px 0 0 0;
+         }
+}
+@media (min-width: 482px) and (max-width: 767px) {
+	.floatLeftHalf {
+width:48%;
+}
+.floatLeftHalfLow {
+       
+    width:45%;
+        padding:0;
+        }
+
+	.gallery-min {
+		width:32%;
+	}
+	.gallery-mid, .gallery-max {
+		width:94%;
+		border:1px solid #ccc;
+	}
+	div.floatLeft-box-max {
+	min-height:350px;
+}
+}
+@media (min-width: 326px) and (max-width: 481px) {
+	.floatLeftHalf {
+width:48%;
+}
+.floatLeftHalfLow {
+        float:none;
+    width:48%;
+        padding:0;
+       }
+
+	.gallery-min {
+		width:48%;
+	}
+	.gallery-mid,.gallery-max {
+		width:94%;
+		border:1px solid #ccc;
+	}
+	.exercise-table td.bindLeft{
+	text-indent: -5em;
+}
+.squash {
+}
+	.flex-item3 {
+	padding:10px;
+	width:88%;
+}
+#tooltip_container {
+     max-width:250px;
+	}
+}
+@media (min-width: 0px) and (max-width: 325px) {
+	.floatLeftHalf {
+/*width:48%;*/
+		float:none;
+}
+    .floatLeftHalfLow {
+        float:none;
+        padding:0;
+        }
+	.gallery-min {
+		width:100%;
+	}
+	.gallery-mid {
+		width:100%;
+	}
+	.exercise-table td.bindLeft{
+	text-indent: -6em;
+}
+div.floatLeft-box-max {
+	min-height:450px;
+	max-width:150%;
+}
+.squash {
+}
+.flex-item3 {
+	padding:10px;
+	width:90%;
+}
+#tooltip_container {
+     max-width:250px;
+	}
+}
+.ui-filter-inset {
+    margin-top: 0;
+}
+/* Custom indentations are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -5.9em;
+}
+.custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 0.5em;
+}
+/* Custom widths are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch {
+    width: 8.875em;
+}
+.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+    padding-left: 7em;
+    width: 1.875em;
+}
+@media (min-width: 28em) {
+    /*Repeated from rule .ui-flipswitch above*/
+    .ui-field-contain > label + .custom-size-flipswitch.ui-flipswitch {
+        width: 1.875em;
+    }
+}
+.floatDiagnosis {
+	float:none;
+	align-content: space-around;
+	margin:0;
+	text-align:center;
+	padding:0;
+	clear:both;
+	width:99%;
+}
+.floatLeft img {float:none;
+max-width:100%;}
+
+	
+/* Basic settings */
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
+a.active  {
+	color:#666!important;
+}
+
+
+.display-out {
+	position:relative;
+	overflow:hidden;
+}
+img.display-in {
+	display:block;
+	align-content:center;
+	margin:auto;
+	padding:0;
+}
+
+.diagnosis-button {
+	background-color:#41ad49;
+	color:#fff;
+	font-size:2.2em;
+}
+
+
+.centrediv {
+	max-width:800px;
+	margin: 0 auto;
+}
+
+.screened {
+	opacity:0.8;
+	
+}
+.clickable-area {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: #ffefef;
+	opacity:0.8;
+}
+.clickable-area:focus {
+    outline: 0;
+}
+.img-border {
+	border: 7px solid #ccc;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	 -webkit-border-radius: 10px;
+    -ms-border-radius:15px;
+  -o-border-radius: 15px;
+	border-radius: 10px;
+	
+}
+.img-icon {
+	max-width: 150px;
+}
+
+figure { display: block; position: relative; float: left; overflow: hidden; margin: 0 20px 20px 0; } figcaption { position: absolute; background: black; background: rgba(0,0,0,0.75); color: white; padding: 10px 20px; opacity: 0; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; } figure:hover figcaption { opacity: 1; } figure:before { content: "?"; position: absolute; font-weight: 800; background: black; background: rgba(255,255,255,0.75); text-shadow: 0 0 5px white; color: black; width: 24px; height: 24px; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; text-align: center; font-size: 14px; line-height: 24px; -moz-transition: all 0.6s ease; opacity: 0.75; } figure:hover:before { opacity: 0; } .cap-left:before { bottom: 10px; left: 10px; } .cap-left figcaption { bottom: 0; left: -30%; } .cap-left:hover figcaption { left: 0; } .cap-right:before { bottom: 10px; right: 10px; } .cap-right figcaption { bottom: 0; right: -30%; } .cap-right:hover figcaption { right: 0; } .cap-top:before { top: 10px; left: 10px; } .cap-top figcaption { left: 0; top: -30%; } .cap-top:hover figcaption { top: 0; } .cap-bot:before { bottom: 10px; left: 10px; } .cap-bot figcaption { left: 0; bottom: -30%;} .cap-bot:hover figcaption { bottom: 0; }
+
+.grey-back {
+	background-color:#eee;
+	
+}
+.grey-back-deep {
+	background-color:#eee;
+	height:50px;
+}
+.editable, .editable-narrow {
+  display: inline-block;
+	background-color:#eee;
+  border: solid 1px #999999!important;
+  min-height: 200px;
+  width: 95%;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	 -webkit-border-radius: 10px;
+    -ms-border-radius:15px;
+  -o-border-radius: 15px;
+border-radius: 10px;
+	padding:5px;
+}
+.editable-narrow {
+    min-height: 40px;  
+}
