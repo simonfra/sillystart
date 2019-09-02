@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+
+<p><span class="mini">more</span> <span class="nav-m">Lumbar &amp; trunk</span> <span class="mini">muscles</span></p>
+<div id="gallery10">
+<p><img src="../images/icon_magnify_m.png" title="enlarge any image" alt="enlarge any image" class=""></p>
+    <a href="../files/app/rmt1.jpg" title="Iliacus: part of ilipsoas; flexes thigh at hip joint; femoral nerve (L2, L3)">
+        <img src="../files/app/rmt1.jpg" alt="muscles" class="min-img">
+    </a>
+    <a href="../files/app/rmt2.jpg" title="Psoas major: part of ilipsoas that flexes thigh at hip joint and flexes vertebral column">
+        <img src="../files/app/rmt2.jpg" alt="muscles" class="min-img">
+    </a>
+</div>
+<p class="floatClear">&nbsp;</p>
+<a href="#" id="btnReload"><img src="../images/icon_back_a.png" alt="back"></a> 
+<p class="floatClear">&nbsp;</p>
+<script>
+    $(document).ready(function() {
+        $('#btnReload').click(function () {
+            location.reload(true); 
+        });    // RELOAD PAGE ON BUTTON CLICK EVENT.
+    });
+</script>
+<script>
+document.getElementById('gallery10').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>

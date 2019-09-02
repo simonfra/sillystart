@@ -1,0 +1,156 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumbar library</title> 
+	<!--------add stylesheets gallery------------------------------->
+<link type="text/css" rel="stylesheet" href="../main/lightgallery/css/lightgallery.css" />
+	<!--------add stylesheets normal------------------------------->
+	<link rel="stylesheet" href="../main/css/font.css">
+    <link rel="stylesheet" href="../main/css/normalize.css">
+    <link rel="stylesheet" href="../main/css/styles.css">  
+	<link rel="stylesheet" href="../main/css/responsive-min.css">
+	<link rel="stylesheet" href="../main/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../main/css/style-developing.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+<script src="../main/js/style-jen-simmons.js"></script>
+<!--------add js extras normal------------------------------->
+	<link rel="stylesheet" href="../main/css/jquery.mobile-1.4.5.min.css">
+	<script src="../main/js/jquery.js"></script>
+	<script src="../main/js/jquery.mobile-1.4.5.min.js"></script>
+<script id="popup-arrow-script">
+	$.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+		$( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+		evt.preventDefault();
+	});
+	</script>
+	<script>
+	$( document ).on( "pagecreate", function() {
+    $( ".popup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".popup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<script>
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     document.body.innerHTML = originalContents;
+}
+</script>
+	<script type="text/javascript">
+$("document").ready(function() {
+	$("#loadhtml").click(loadHTML);
+	});
+	function loadHTML() {
+		$("#more-muscles").load("z-xtra-muscles-lumbar.html");
+	}
+	$("#hide").click(function(){
+    $("#loadhtml").hide();
+});
+</script>
+<script type="text/javascript">
+$("document").ready(function() {
+	$("#getcontent").click(getContent);
+	});
+	function getContent() {
+		$.ajax("zsampletextcontent.txt",
+		{ success: setContent,
+		type: "GET",
+		dataType: "text" });
+	}
+	function setContent(data, status, jqxhr) {
+		$("#example").text(data);
+	}
+</script>
+  </head>
+  <body class="" id="page">
+<!-- lightgallery code-->
+    <script src="../main/lightgallery/js/jquery.min.js"></script>
+    <script src="../main/lightgallery/js/lightgallery.min.js"></script>
+    <script src="../main/lightgallery/js/jquery.mousewheel.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="../main/lightgallery/js/lg-thumbnail.min.js"></script>
+    <script src="../main/lightgallery/js/lg-fullscreen.min.js"></script>
+<!-- /lightgallery code--> 
+<div data-role="page" id="start" data-theme="f" class="focus2">
+    <main class="index-blend"> 
+		<div class="header"><h4><img src="../images/icon-book20g.png" alt="learning" title="learning" /> Lumbar library</h4></div>
+    <header data-role="header4" class="header6"> 
+    <h3 class="white-purple"></h3>
+   </header> 
+<div class="icon-stage">
+<ul class="flex-container-boxes nowrap tooltipnav">
+  <li class="flex-item"><a href="lumbar-index.html" rel="external" data-info="All"><img src="../images/icon_back_start.png" alt="back"></a></li>
+  <li class="flex-item-grey "><a href="lumbar-index.html"  rel="external" data-info="Start"> &nbsp; </a></li>
+  <li class="flex-item-purple"><a href="lumbar-library.html"  rel="external" data-info="Anatomy"> &nbsp; </a></li>
+  <li class="flex-item-orange active-flex"><a href="lumbar-library2.html"  rel="external" data-info="Physiology">&nbsp; </a></li>
+  <li class="flex-item-orange2 "><a href="lumbar-library3.html" rel="external" data-info="Pathology"> &nbsp; </a></li>
+  <li class="flex-item-yellow "><a href="lumbar-guide.html" rel="external" data-info="Clinical reasoning"> &nbsp; </a></li>
+</ul>	
+</div><!-- /icon-stage -->      
+<div class="focus1" id="r1"> 
+                   <h3>Physiology</h3>
+<p class="floatClear">&nbsp;</p>
+		                    
+	<div id="lightgallery2"class="w3-animate-bottom">
+        <a href="../files/app/lumr05.jpg" title="">
+<img src="../files/app/lumr05.jpg" class="gallery-min flex-item-start" alt="The lumbar palpation requires correct use of two hands on the relevant vertebrae.">
+    </a>
+    <a href="../files/app/lumr06.jpg" title="">
+<img src="../files/app/lumr06.jpg" class="gallery-min flex-item-start" alt="The side of one hand is angled fully across the relevant vertebrae. The second hand is then placed over the first to allow an even, gentle force to be applied through both arms.">
+    </a>
+	<a href="../files/app/lumr07.jpg" title="">
+<img src="../files/app/lumr07.jpg" class="gallery-min flex-item-start" alt="The most commonly used body planes. The median plane is viewed from the midline of the sagittal, while the two aspects of the horizontal plane are below (plantar) and top (dorsal)">
+    </a>
+	<a href="../files/app/lumr08.jpg" title="">
+<img src="../files/app/lumr08.jpg" class="gallery-min flex-item-start" alt="the sagittal plane includes  extension (straightening) and flexion (bending); while the lateral plane includes abduction  (moving out) and   adduction  (moving in)">
+    </a>
+    <a href="../files/app/lumr09.jpg" title="">
+<img src="../files/app/lumr09.jpg" class="gallery-min flex-item-start" alt="Dermatomes are tested by touching the skin of both legs and comparing sensation felt. A positive test is where reduced feeling is reported. Each colour relates to a single spinal nerve root.">
+    </a>
+    <a href="../files/app/lumr10.jpg" title="">
+<img src="../files/app/lumr10.jpg" class="gallery-min flex-item-start" alt="A myotome is the group of muscles that a single spinal
+nerve root supplies. If myotomes test positive, there is muscle weakness">
+    </a>
+    <a href="../files/app/lumr25.jpg" title="">
+<img src="../files/app/lumr25.jpg" class="gallery-min flex-item-start" alt="Myotomes. A myotome is the group of muscles that a single spinal nerve root supplies. If myotomes test positive, there is muscle weakness.">
+    </a>
+    <a href="../files/app/lumr11.jpg" title="">
+<img src="../files/app/lumr11.jpg" class="gallery-min flex-item-start" alt="The knee and ankle reflexes are tested by hitting the patella and achilles tendons and observing the movement of the lower leg and foot. Slow response is a positive test, indicating a disc problem. The knee reflex is linked to the L3-L4 nerve root and the ankle to the L5-S1 nerve root.  Where available, a reflex hammer is useful.">
+    </a>
+	<a href="../files/app/lumr12.jpg" title="">
+<img src="../files/app/lumr12.jpg" class="gallery-min flex-item-start" alt="Acute inflammation blood clot forms, tissue disruption. 72 hours. Regeneration
+clot shrinks, new fibrous tissue forms. 72 hours – 6/8 weeks. Re-modelling tissue fibres become organised. 6/8 weeks – 6/12 months">
+    </a>
+    <a href="../files/app/lumr13.jpg" title=" ">
+<img src="../files/app/lumr13.jpg" class="gallery-min flex-item-start" alt="haematoma, week 1. soft callus, week 2-3. hard callus, week 4-16. remodelling, week 17 onwards">
+    </a>
+    
+    </div><!--End gallery-->
+		  
+		</div><!--End focus2-->
+<div data-role="footer" data-type="horizontal" data-position="fixed" class="white">
+		<a href="lumbar-index.html" rel="external"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp; <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  &nbsp; &nbsp; 
+				  </div><!-- /footer -->
+		 </main>
+	  </div>
+
+<script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery2").lightGallery(); 
+        });
+    </script> 
+  </body>
+</html>

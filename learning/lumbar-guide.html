@@ -1,0 +1,317 @@
+<!doctype html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumbar teaching guide</title> 
+	<!--------add stylesheets normal------------------------------->
+	<link rel="stylesheet" href="../main/css/font.css">
+    <link rel="stylesheet" href="../main/css/normalize.css">
+    <link rel="stylesheet" href="../main/css/styles.css">  
+	<link rel="stylesheet" href="../main/css/responsive-min.css">
+    <link rel="stylesheet" href="../main/css/style-developing.css">	
+	<link rel="shortcut icon" href="../images/favicon.ico">	
+<script src="../main/js/style-jen-simmons.js"></script>
+	<!--------add js extras normal------------------------------->
+<link rel="stylesheet" href="../main/css/jquery.mobile-1.4.5.min.css">
+	<script src="../main/js/jquery.js"></script>
+	<script src="../main/js/jquery.mobile-1.4.5.min.js"></script>
+<script id="popup-arrow-script">
+	$.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+		$( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+		evt.preventDefault();
+	});
+	</script>
+	<script>
+	$( document ).on( "pagecreate", function() {
+    $( ".popup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".popup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+</script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<script>
+function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     document.body.innerHTML = originalContents;
+}
+</script>		  
+  </head>
+  <body class="">
+
+<!-- Start of  page: #start -->
+<div data-role="page" id="start" data-theme="f" class="focus2">
+<!--<main>-->	  
+    <main class="index-blend">	
+		<div class="header"><h4><img src="../images/icon-book20g.png" alt="learning" title="learning" /> Lumbar library</h4></div>
+    <header data-role="header4" class="header6"> 
+    <h3 class="white-purple"></h3>
+   </header> 
+<div class="icon-stage">
+<ul class="flex-container-boxes nowrap tooltipnav">
+  <li class="flex-item"><a href="lumbar-index.html" rel="external" data-info="All"><img src="../images/icon_back_start.png" alt="back"></a></li>
+  <li class="flex-item-grey "><a href="lumbar-index.html"  rel="external" data-info="Start"> &nbsp; </a></li>
+  <li class="flex-item-purple"><a href="lumbar-library.html"  rel="external" data-info="Anatomy"> &nbsp; </a></li>
+  <li class="flex-item-orange "><a href="lumbar-library2.html"  rel="external" data-info="Physiology">&nbsp; </a></li>
+  <li class="flex-item-orange2 "><a href="lumbar-library3.html" rel="external" data-info="Pathology"> &nbsp; </a></li>
+  <li class="flex-item-yellow active-flex"><a href="lumbar-guide.html" rel="external" data-info="Clinical reasoning"> &nbsp; </a></li>
+</ul>			
+</div><!-- /icon-stage -->
+		<h3 class="">Clinical reasoning</h3>
+<ul class="flex-container-select centrediv w3-animate-opacity">			
+	<li class="flex-item-box-gold"><a href="#t1" title="D1"><img src="../files/app/luma02a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Disc pain</span><br /><br /></a></li>
+	<li class="flex-item-box-gold"><a href="#t2" title="D2"><img src="../files/app/luma13a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Lumbar stenosis</span><br /> <br /></a><br /></li>
+	<li class="flex-item-box-gold"><a href="#t3" title="D3"><img src="../files/app/luma03a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Facet joint pain</span><br /> <br /></a><br /></li>
+	<li class="flex-item-box-gold"><a href="#t4" title="D4"><img src="../files/app/luma04a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Muscle spasm</span><br />  <br /></a><br /></li>
+	<li class="flex-item-box-gold"><a href="#t5" title="D5"><img src="../files/app/luma12a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Arthritis</span><br /></a><br /></li>
+	<li class="flex-item-box-gold"><a href="#t6" title="D6"><img src="../files/app/luma11a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Myofascial tightness</span><br /> </a><br /></li>
+	<li class="flex-item-box-gold"><a href="#t7" title="D7"><img src="../files/app/luma16a.jpg" class="flex-item-start" alt="diagnosis" title="diagnosis"><span class="ui-li nav-p">Fracture</span><br /> </a><br /></li>  
+</ul>
+	<!--End flex-container-->		
+		
+<div data-role="footer" data-type="horizontal" data-position="fixed" class="white">
+		<a href="lumbar-index.html" rel="external"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp; <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  &nbsp; &nbsp; 
+				  </div><!-- /footer -->
+    </main>
+	  </div><!-- /start -->
+	  
+	  <!-- page: 1 -->
+	  <div data-role="page" id="t1" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+	<h2><span class="nav-m">Disc pain</span> <span class="mini"></span></h2>
+		<div id="treat1" class="centrediv">
+			<img src="../files/app/a01a.jpg" alt="main" class="min-img"/>
+			<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go 2</span></p>						
+			<hr  />		
+			<img src="../files/app/luma02a.jpg" alt=""  class="min-img"/>
+			<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">Yes = go to 3</span></p>
+		<hr  />
+			<img src="../files/app/luma03a.jpg" alt=""  class="min-img"/>
+			<p>3: Bending forwards, is it painful? <span class="big-form-yellow">Yes = go to 6</span></p>	
+		<hr  />		
+			<img src="../files/app/luma06a.jpg" alt=""  class="min-img"/>
+			<p>6: Is the patient standing with a lateral pelvic shift? <span class="big-form-yellow">Yes = go to 7</span></p>
+		<hr/>
+			<img src="../files/app/luma07a.jpg" alt=""  class="min-img"/> 
+			<p>7: Palpate Lumbar segments, is it painful? <span class="big-form-yellow">Yes = go to 8</span></p>
+		<hr class="grey" />
+			<img src="../files/app/luma08a.jpg" alt=""  class="min-img">
+			<p>8: Sitting slouched, straighten patient’s leg, lift toes, and bend head forward.<br /> Is it painful or is altered sensation felt? <span class="big-form-yellow">Yes = go to 9</span></p>	
+		<hr class="grey" />	
+			<img src="../files/app/luma09a.jpg" alt="" class="min-img"/>
+			<p>9: Therapist lifts painful leg straight up into the air. Is it painful or  is altered sensation felt? <br />Patient may lift head to test further. <span class="big-form-yellow">Yes = go to 10</span></p>	
+		<hr class="grey" />	
+			<img src="../files/app/luma10a.jpg" alt="" class="min-img"> 
+			<p>10: Test reflexes, myotomes, and dermatomes. Are some positive? <span class="big-form-yellow">Yes
+				= Disc pain</span></p>	
+			<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t1" rel="external">Disc pain treatment</a></span>
+		</div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t2"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 1 -->
+     
+<!-- page: 2 -->
+	  <div data-role="page" id="t2" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+<h2><span class="nav-m">Lumbar stenosis</span> <span class="mini"></span></h2>
+	<div id="treat2" class="centrediv">
+	<img src="../files/app/a01a.jpg" alt="" class="min-img"/>
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go 2</span></p>
+		<hr class="grey" />
+<img src="../files/app/luma02a.jpg" alt="" class="min-img"/>
+		<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">No = go 11</span></p>		
+		<hr class="grey" />
+<img src="../files/app/luma11a.jpg" alt="" class="min-img"/>
+		<p>11: Palpate Lx segments, is it painful? <span class="big-form-yellow">Yes = go 12</span></p>
+		<hr class="grey" />
+<img src="../files/app/luma12a.jpg" alt="" class="min-img"/>
+	  <p>12: Is patient over 50yrs old? <span class="big-form-yellow">Yes = go  13</span></p>
+		<hr class="grey" />
+<img src="../files/app/luma13a.jpg" alt="" class="min-img"/>
+	<p>13: When walking up hill or bent forward, is it less painful? <span class="big-form-yellow">No
+    = Lumbar stenosis</span></p>	
+		<hr class="grey" />
+		<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t2" rel="external">Lumbar stenosis treatment</a></span>
+		  </div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t3"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 2 -->
+
+<!-- page: 3 -->
+	  <div data-role="page" id="t3" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+<h2><span class="nav-m">Facet joint pain</span> <span class="mini"></span></h2>
+		<div id="treat3" class="centrediv">
+		<img src="../files/app/a01a.jpg" alt="test" class="min-img">
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go 2</span></p>
+	<hr />
+        <img src="../files/app/luma02a.jpg" alt="test" class="min-img">
+		<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">Yes = go 3</span></p>
+	<hr />
+        <img src="../files/app/luma03a.jpg" alt="test" class="min-img">
+		<p>3: Bending forwards, is it painful? <span class="big-form-yellow">No = go 4</span></p>
+	<hr />
+        <img src="../files/app/luma04a.jpg" alt="test" class="min-img">
+		<p>4: Bending backwards, is it painful? <span class="big-form-yellow">Yes = go 11</span></p>
+	<hr />
+        <img src="../files/app/luma11a.jpg" alt="test" class="min-img">
+		<p>11: Palpate Lx segments, is it painful? <span class="big-form-yellow">Yes = go 12</span></p>
+	<hr />
+        <img src="../files/app/luma12a.jpg" alt="test" class="min-img">
+		<p>12: Is patient over 50yrs old? <span class="big-form-yellow">Yes 
+			= Facet joint pain</span>   </p>
+			<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t3" rel="external">Facet joint pain treatment</a></span>
+</div>
+
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t4"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 3 -->
+
+<!-- page: 4 -->
+	  <div data-role="page" id="t4" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+	<h2><span class="nav-m">Muscle spasm/ strain</span> <span class="mini"></span></h2>
+<div id="treat4"  class="centrediv">
+	<img src="../files/app/a01a.jpg" alt="test" class="min-img">
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go 2</span></p>
+	<hr />
+        <img src="../files/app/luma02a.jpg" alt="test" class="min-img">
+		<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">Yes = go 3</span></p>
+	<hr />
+        <img src="../files/app/luma03a.jpg" alt="test" class="min-img">
+		<p>3: Bending forwards, is it painful? <span class="big-form-yellow">No = go 4</span></p>
+	<hr />
+        <img src="../files/app/luma04a.jpg" alt="test" class="min-img">
+		<p>4: Bending backwards, is it painful? <span class="big-form-yellow">No = go 5</span></p>
+	<hr />
+        <img src="../files/app/luma05a.jpg" alt="test" class="min-img">
+		<p>5: Bending to the right and left, is it painful? <span class="big-form-yellow">Yes = go 14</span></p>
+	<hr />
+        <img src="../files/app/luma14a.jpg" alt="test" class="min-img">
+		<p>14: Is increased muscle tension evident in muscles along back? <span class="big-form-yellow">Yes = go 15</span></p>
+	<hr />
+        <img src="../files/app/luma15a.jpg" alt="test" class="min-img">
+		<p>15: Feel the muscle bellies along the lower spine and above the pelvis is it painful to touch? <span class="big-form-yellow">Yes = Muscle spasm/ strain</span></p>
+		<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t4" rel="external">Muscle spasm/ strain treatment</a></span>
+	
+</div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t5"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 4 -->
+
+<!-- page: 5 -->
+<div data-role="page" id="t5" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+	<h2><span class="nav-m">Arthritis</span> <span class="mini"></span></h2>
+<div id="treat5" class="centrediv">
+	<img src="../files/app/a01a.jpg" alt="test" class="min-img">
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go 2</span></p>
+	<hr />
+        <img src="../files/app/luma02a.jpg" alt="test" class="min-img">
+		<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">No = go 11</span></p>
+	<hr />
+        <img src="../files/app/luma11a.jpg" alt="test" class="min-img">
+		<p>11: Palpate Lx segments, is it painful? <span class="big-form-yellow">Yes = go 12</span></p>
+	<hr />
+        <img src="../files/app/luma12a.jpg" alt="test" class="min-img">
+		<p>12: Is patient over 50yrs old? <span class="big-form-yellow">Yes = go 13</span></p>
+	<hr />
+        <img src="../files/app/luma13a.jpg" alt="test" class="min-img">
+		<p>13: When walking up hill or bent forward, is it less painful? <span class="big-form-yellow">No = Arthritis</span></p>
+	<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t5" rel="external">Arthritis treatment</a></span>
+</div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t6"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 5 -->
+
+<!-- page: 6 -->
+<div data-role="page" id="t6" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+	<h2><span class="nav-m">Myofascial tightness</span> <span class="mini"></span></h2>
+<div id="treat6"  class="centrediv">
+	<img src="../files/app/a01a.jpg" alt="test" class="min-img">
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">No = go to 2</span></p>
+	<hr />
+        <img src="../files/app/luma02a.jpg" alt="test" class="min-img">
+		<p>2: Has there been sudden onset of low back pain following an action of lifting/ twisting? <span class="big-form-yellow">No = go  to11</span></p>
+	<hr />
+        <img src="../files/app/luma11a.jpg" alt="test" class="min-img">
+		<p>11: Palpate Lx segments, is it painful? <span class="big-form-yellow">No = go  to 15</span></p>
+	<hr />
+        <img src="../files/app/luma15a.jpg" alt="test" class="min-img">
+		<p>15: Feel the muscle bellies along the lower spine and above the pelvis is it painful to touch? <span class="big-form-yellow">No = go to 17</span></p>
+	<hr />
+        <img src="../files/app/luma17a.jpg" alt="test" class="min-img">
+		<p>17: Pick up skin, and roll it between fingers. Does it feel painful and tight? <span class="big-form-yellow">Yes  = Myofascial tightness</span></p>
+		<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t6" rel="external">Myofascial tightness treatment</a></span>
+		</div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp;  <a href="#t7"><img src="../images/icon_gold_r.png" alt="back"></a>
+</div><!-- /footer -->
+</div><!-- /page 6 -->
+
+<!-- page: 7 -->
+<div data-role="page" id="t7" data-theme="f" class="pale-bkgnd-gold">
+	 <header  data-role="" class="headergold" > 
+    <h4 class="white">Lumbar</h4>
+		</header> <!-- /header -->
+	<div role="main" class="ui-content">
+	<h2><span class="nav-m">Fracture</span> <span class="mini"></span></h2>
+<div id="treat7" class="centrediv">
+	<img src="../files/app/a01a.jpg" alt="test" class="min-img">
+		<p>1: Has there been a fall/RTA/trauma? <span class="big-form-yellow">Yes = go to 16</span></p>
+	<hr />
+        <img src="../files/app/luma16a.jpg" alt="test" class="min-img">
+		<p>16: Is the lumbar segment painful to tap locally? <span class="big-form-yellow">Yes = Fracture</span></p>
+	<span class="big-form-blue"><a href="../practice/lumbar-treatment.html#t7" rel="external">Fracture treatment</a></span>
+</div>
+     </div><!-- /content -->
+<div data-role="footer" data-theme="f"  data-position="fixed" class="white">
+		<a href="#start"><img src="../images/icon_back_start_blue.png" alt="back"></a> &nbsp; &nbsp;   <button onclick="goBack()" ><img src="../images/icon_back_a.png" alt="back"></button> &nbsp; &nbsp; 
+</div><!-- /footer -->
+</div><!-- /page 7 -->
+
+
+	 
+	  
+  </body>
+</html>
